@@ -1,0 +1,239 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Blog/Inspiración | Pam Accessories</title>
+    <link href="/tfg-proyecto-final/assets/css/style.css" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+
+    <style>
+        body {
+            background-color: #ffdbd3;
+            overflow-x: hidden;
+        }
+
+        .inicio, .catalogo{
+            font-weight: bold;
+        }
+
+        .titulo{
+            margin-top: 50px;
+            text-align: center;
+        }
+
+        .titulo h2{
+            color: #aa4343;
+        }
+
+        .nombre {
+            margin: 0;
+            font-size: 28px;
+            color: #aa4343;
+            font-weight: bold;
+        }
+
+        .carousel-control-prev,
+        .carousel-control-next {
+            width: 50px;
+            height: 50px;
+            top: 50%;
+            transform: translateY(-50%);
+            background-color: rgba(255, 255, 255, 0.4);
+            border-radius: 50%;
+            display: flex;
+            align-items: center;
+            justify-content: center;
+        }
+
+        .carousel-control-prev-icon,
+        .carousel-control-next-icon {
+            filter: invert(1);
+            width: 20px;
+            height: 20px;
+        }
+        .imagen{
+            width: 400px;
+            height: 300px;
+            margin-left: 450px;
+        }
+
+        .enlace{
+            margin-top: 20px;
+        }
+
+        
+    </style>
+</head>
+
+<body>
+
+    <header class="encabezado py-3">
+        <div class="container-fluid d-flex justify-content-between align-items-center px-3">
+
+            <!--Logo + nombre-->
+            <div class="d-flex align-items-center" style="margin-left: 3px;">
+                <a href="/tfg-proyecto-final/index.php" class="d-flex align-items-center text-decoration-none">
+                    <img src="/tfg-proyecto-final/assets/img/logo-tfg-removebg-preview.png" width="80" height="40" alt="Logo">
+                    <h1 class="h5 ms-2 mb-0 nombre">Pam Accessories</h1>
+                </a>
+            </div>
+
+            <!-- Iconos-->
+            <div class="d-flex align-items-center" style="gap: 30px; margin-right: 3px;">
+                <a href="/tfg-proyecto-final/index.php" class="text-dark text-decoration-none inicio">Inicio</a>
+                <a href="/tfg-proyecto-final/catalogo.php" class="text-dark text-decoration-none catalogo">Catálogo</a>
+                <button class="btn btn-link p-0 usuario-boton" title="Iniciar sesión/Registro">
+                    <img src="/tfg-proyecto-final/assets/img/user.png" alt="Usuarios" width="24" height="24">
+                </button>
+                <button class="btn btn-link p-0 favoritos-boton" title="Favoritos">
+                    <img src="/tfg-proyecto-final/assets/img/heart.png" alt="Favoritos" width="24" height="24">
+                </button>
+                <button class="btn btn-link p-0 carrito-boton" title="Carrito">
+                    <img src="/tfg-proyecto-final/assets/img/carritocompra.png" alt="Carrito" width="24" height="24">
+                </button>
+            </div>
+        </div>
+    </header>
+
+    <div class="titulo">
+        <h2>Inspírate con Pam</h2>
+        <p>Descubre Tips y Looks con Nuestros Accesorios</p>
+    </div>
+
+    <section class="container my-5 p-4 rounded shadow-sm">
+        <h2 class="text-center mb-4">💎 Cómo cuidar tus joyas cuidadosamente</h2>
+        <img src="/tfg-proyecto-final/assets/img/cuidado-joyas.jpg" class="imagen" alt="Mano limpiando joya">
+        <br><br>
+        <p class="lead">
+            Tus accesorios merecen un cuidado especial para que brillen por más tiempo. Aquí te compartimos algunos consejos prácticos:
+        </p>
+        <ul>
+            <li><strong>Guárdalas por separado:</strong> Usa bolsitas individuales o compartimentos para evitar rayaduras.</li>
+            <li><strong>Evita el agua y perfumes:</strong> Quita tus joyas antes de ducharte o aplicar productos químicos.</li>
+            <li><strong>Límpialas suavemente:</strong> Usa un paño seco y suave después de cada uso.</li>
+            <li><strong>No duermas con ellas:</strong> Así evitarás que se doblen, rompan o pierdan piedras.</li>
+            <li><strong>Guárdalas en un lugar seco:</strong> La humedad puede deteriorar el metal con el tiempo.</li>
+        </ul>
+        <p class="mt-3">
+            Siguiendo estos simples pasos, tus accesorios de Pam Accessories te acompañarán por mucho más tiempo con el
+            mismo brillo del primer día ✨.
+        </p>
+    </section>
+
+
+    <div class="container my-5 p-4 rounded shadow-sm">
+        <h2 class="mb-4 text-center">💡 Inspiración de Looks</h2>
+
+        <div id="inspirationCarousel" class="carousel slide" data-bs-ride="carousel">
+            <div class="carousel-inner">
+
+                <!-- Slide 1 -->
+                <div class="carousel-item active">
+                    <div class="row text-center">
+                        <h4>🌊 Frescura Azul: Ligereza y estilo en cada detalle</h4>
+                        <p>Combina tonos azules y plateados para un look relajado pero con presencia.</p>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Collar-juvenil-azul-1.jpg" class="d-block w-100 rounded"
+                                alt="Collar con piedras azules">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=11" class="btn btn-outline-primary btn-sm enlace ">Ver collar</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Anillo-extravagante-azul-1.jpg" class="d-block w-100 rounded"
+                                alt="Anillo azul">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=6" class="btn btn-outline-primary btn-sm enlace">Ver anillo</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Pendientes-sencillo-plateado-1.jpg" class="d-block w-100 rounded"
+                                alt="Pendientes plateados">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=15" class="btn btn-outline-primary btn-sm enlace">Ver pendientes</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 2 -->
+                <div class="carousel-item">
+                    <div class="row text-center">
+                        <h4>🌿 Boho Natural: Libertad en tonos verdes suaves</h4>
+                        <p>Accesorios con texturas orgánicas y verdes apagados para un estilo libre y auténtico.</p>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Collar-ecologico-verderosa-1.jpg" class="d-block w-100 rounded"
+                                alt="Collar con hojas verdes y piedras rosas">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=9" class="btn btn-outline-primary btn-sm enlace">Ver collar</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Pendientes-juvenil-blanco-1.jpg" class="d-block w-100 rounded"
+                                alt="Pendientes blancos florales">
+                            <a href="/tfg-proyecto-final/detalle-producto.php" class="btn btn-outline-primary btn-sm enlace">Ver pendientes</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Anillo-ecologico-1.jpg" class="d-block w-100 rounded"
+                                alt="Anillo con piedra verde">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=4" class="btn btn-outline-primary btn-sm enlace">Ver anillo</a>
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Slide 3 -->
+                <div class="carousel-item">
+                    <div class="row text-center">
+                        <h4>💫 Toques de Oro: Elegancia atemporal para cada ocasión</h4>
+                        <p>El dorado aporta un brillo sutil y sofisticado, ideal para destacar con clase.</p>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Pulsera-sencilla-dorada-1.jpg" class="d-block w-100 rounded"
+                                alt="Pulsera dorada">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=20" class="btn btn-outline-primary btn-sm enlace">Ver pulsera</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Pendientes-elegante-dorado-1.jpg" class="d-block w-100 rounded"
+                                alt="Pendientes dorados">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=14" class="btn btn-outline-primary btn-sm enlace">Ver pendientes</a>
+                        </div>
+                        <div class="col-md-4">
+                            <img src="/tfg-proyecto-final/assets/img/Anillo-elegante-1.jpg" class="d-block w-100 rounded"
+                                alt="Anillo dorado">
+                            <a href="/tfg-proyecto-final/detalle-producto.php?id=5" class="btn btn-outline-primary btn-sm enlace">Ver anillo</a>
+                        </div>
+                    </div>
+                </div>
+
+            </div>
+
+            <!-- Controles del carrusel -->
+            <button class="carousel-control-prev" type="button" data-bs-target="#inspirationCarousel"
+                data-bs-slide="prev">
+                <span class="carousel-control-prev-icon"></span>
+            </button>
+            <button class="carousel-control-next" type="button" data-bs-target="#inspirationCarousel"
+                data-bs-slide="next">
+                <span class="carousel-control-next-icon"></span>
+            </button>
+        </div>
+    </div>
+
+
+    <footer class="footer">
+    <div class="footer-contenido">
+      <div class="footer-enlaces">
+        <a href="/tfg-proyecto-final/blog-inspiracion.html">Blog / Inspiración</a>
+        <a href="/tfg-proyecto-final/sobre-nosotros.php">Sobre Nosotros</a>
+        <a href="/tfg-proyecto-final/contacto.php">Contacto</a>
+        <a href="/tfg-proyecto-final/politica-privacidad.php">Política de Privacidad</a>
+        <a href="/tfg-proyecto-final/terminos-condiciones.php">Términos y Condiciones</a>
+      </div>
+      <div class="footer-redes">
+        <p>Síguenos:</p>
+        <a href="#" target="_blank">Instagram</a>
+        <a href="#" target="_blank">TikTok</a>
+        <a href="#" target="_blank">Pinterest</a>
+      </div>
+      <p class="footer-copy">© 2025 Pam Accessories. Todos los derechos reservados.</p>
+    </div>
+    </footer>
+
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+
+</html>
